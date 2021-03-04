@@ -1,0 +1,481 @@
+p, a, b, i, span{
+    font-family: Montserrat;
+}
+
+.navbar-custom{
+    background: #362CA8;
+}
+
+.brand-custom{
+    font-weight: 700;
+}
+
+.icone-dots{
+    color:#fff;
+    transition: all 0.5s;
+}
+
+.icone-dots:hover{
+    color:#6558f5;
+    transition: all 0.5s;
+}
+
+.bg-custom {
+    background: #F5DD58;
+    padding: 4px 8px;
+    border-radius: 100px;
+    color: #000;
+    position: relative;
+    top: -40px;
+    right: -25px;
+}
+
+html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+/* since the navbar is fixed we need to add some space to the body */
+body {
+    padding-top: 56px;
+}
+
+
+
+
+.offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    right: 100%;
+    left:-300px;
+    width: 300px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #fff;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+}
+
+.offcanvas-collapse {
+    align-items:start;
+    /*   Adds a subtle drop shadow   */
+    -moz-background-clip: padding;     /* Firefox 3.6 */
+    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+    border-right:5px solid rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+/* Makes the nav visibile with the open class */
+.offcanvas-collapse.open {
+    left: 0;
+    visibility: visible;
+}
+
+
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+    color: #007bff;
+}
+
+.nav-underline .active {
+    font-weight: 500;
+    color: #343a40;
+}
+
+.btn-custom{
+    background: #6558f5;
+    border-radius:0px;
+}
+
+.card-custom {
+    margin-bottom: 30px;
+    height:100%;
+}
+
+.card-img-top {
+    background-repeat: no-repeat;
+    min-height: 354px;
+    background-size: cover;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.card-img-custom:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.sem-img{
+    background: silver;
+}
+
+.sem-img:before {
+    padding-top: 35%;
+    font-family: "Font Awesome 5 Free";
+    content: "\f03e";
+    text-align: center;
+    display: block;
+    font-size: 80px;
+}
+
+.box-img{
+    overflow: hidden;
+}
+
+.icones-topo{
+    margin-bottom: -27px;
+}
+
+.row.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.col-custom {
+    margin-bottom: 30px;
+}
+
+.icone-favorito:hover {
+    opacity: 1;
+    color:#fff;
+    transition: all 0.5s;
+}
+
+.icone-favorito {
+    position: absolute;
+    right: 0px;
+    margin: 5px;
+    color: #fff;
+    opacity: .6;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.icone-favorito.ativo{
+    color:#dc3545;
+    opacity: 1;
+}
+
+.thumbnail-custom {
+    width: 35px;
+}
+
+.box-icones-favoritos a {
+    padding: 5px;
+    color: #4b5c6b;
+    transition: all 0.5s;
+    display: block;
+    padding: 0px;
+}
+
+.box-icones-favoritos a:hover {
+    color: #8dd7cf;
+    transition: all 0.5s;
+}
+
+.row-custom{
+    width:100%;
+}
+
+.box-icones-favoritos {
+    text-align: right;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+.titulos-sidebar{
+    white-space: nowrap;
+    color: #293845;
+    margin-bottom: 20px;
+    font-family: montserrat;
+}
+
+.bm-item-list>*{
+    display: block !important;
+}
+
+.bm-item-list {
+    margin: 0px 10px !important;
+    height: 100%;
+}
+
+.bm-item-list > div{
+    height: 100%;
+}
+
+.titulo-filmes{
+    font-size:15px;
+    color: #293845;
+    font-family: montserrat;
+}
+
+.texto-filmes-listagem{
+    color: #293845;
+    font-family: montserrat;
+}
+
+.texto-filmes-listagem span {
+    font-size: 13px;
+}
+
+.texto-generos{
+    margin: 0px;
+    line-height: 15px;
+}
+
+.bm-menu {
+    background-color: #fff !important;
+    box-shadow: -1px 0px 10px #00000038;
+    overflow: hidden;
+}
+
+.preco-texto{
+    color: #293845;
+    font-family: montserrat;
+    font-size: 15px;
+}
+
+.preco-texto-listagem{
+    color: #293845;
+    font-family: montserrat;
+    font-size: 25px;
+}
+
+.list-group-item{
+    min-width: 252px;
+}
+
+.videobg{
+    top:0px;
+    width: 100%;
+    height: 354px;
+    position: absolute;
+    /*display: none;*/
+}
+
+.btn-compra{
+    min-width: 252px;
+}
+
+.texto-compra{
+    white-space: nowrap;
+}
+
+.sidebarCarrinho{
+    height: 100%;
+}
+
+.boxFinalizar{
+    bottom: 0px;
+    position: fixed;
+    margin-bottom: 20px;
+}
+
+.texto-compra {
+    white-space: nowrap;
+    font-family: montserrat;
+    color: #293845;
+}
+
+.texto-compra span {
+    text-align: right;
+    font-weight: 700;
+    font-size: 23px;
+    float: right;
+}
+
+.lista-sidebar{
+    max-height: 80%;
+    overflow-x: hidden;
+}
+
+ul.lista-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+ul.lista-sidebar::-webkit-scrollbar-track {
+
+}
+
+ul.lista-sidebar::-webkit-scrollbar-thumb {
+    background-color: #293845;
+    outline: 1px solid slategrey;
+}
+
+.texto-alerta{
+    color: #293845;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.texto-data{
+    margin: 0px;
+    position: absolute;
+    color: #fff;
+    font-family: montserrat;
+}
+
+.texto-data{
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background: rgba(101, 88, 245, .6);
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.esvaziar-link{
+    font-size: 12px;
+}
+
+.table-custom{
+    margin-top: 44px;
+}
+
+.table-custom p {
+    font-family: montserrat;
+}
+
+.icones-mobile{
+    display: none;
+}
+
+.icones-desktop{
+    display: block;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 780px) {
+    .icones-desktop{
+        display: none;
+    }
+    .icones-mobile{
+        display: block;
+    }
+    .bm-menu {
+        padding-top: 100px !important;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    /* STYLES GO HERE */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    /* STYLES GO HERE */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    /* STYLES GO HERE */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    /* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    /* STYLES GO HERE */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    /* STYLES GO HERE */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    /* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+    /* STYLES GO HERE */
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+    /* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    /* STYLES GO HERE */
+}
