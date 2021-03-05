@@ -13,7 +13,7 @@ Gerar a build do sistema
 npm run build
 ````
 
-Subir o ambiente da aplicação com o Node
+Subir o servidor da aplicação com o Node
 ```
 node server
 ````
